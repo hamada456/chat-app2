@@ -5,10 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :name, presence: true
-<<<<<<< Updated upstream
          
-=======
->>>>>>> Stashed changes
   has_many :room_users
   has_many :rooms, through: :room_users
 end
